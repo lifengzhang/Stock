@@ -35,10 +35,12 @@
     [NSLayoutConstraint constraintWithItem:self.welcomeView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.f].active = YES;
     [NSLayoutConstraint constraintWithItem:self.welcomeView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.f].active = YES;
     [NSLayoutConstraint constraintWithItem:self.welcomeView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.f].active = YES;
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
+    
+    
+    dispatch_time_t when=dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC));
+    dispatch_after(when, dispatch_get_main_queue(), ^{
+        [self.welcomeView viewAnimation];
+    });
 }
 
 - (void)didReceiveMemoryWarning {

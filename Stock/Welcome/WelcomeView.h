@@ -12,4 +12,6 @@
 
 - (instancetype)initWithFrame:(CGRect)frame backgroundImageStr:(NSString*)backgroundImageStr;
 
+- (void)viewAnimation;
+
 @end
