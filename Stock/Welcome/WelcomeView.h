@@ -10,6 +10,8 @@
 
 @interface WelcomeView : UIView
 
+@property (nonatomic,strong) UIButton * startButton;
+
 - (instancetype)initWithFrame:(CGRect)frame backgroundImageStr:(NSString*)backgroundImageStr;
 
 - (void)viewAnimation;
