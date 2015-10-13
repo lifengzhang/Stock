@@ -102,6 +102,7 @@
     [self addSubview:self.startButton];
     self.startButton.translatesAutoresizingMaskIntoConstraints = NO;
     
+    [self.startButton addTarget:self action:@selector(tapStartButton) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)setUpConstrain {
@@ -179,6 +180,10 @@
     
     
     [button.layer addSublayer:shapeLayer];
+}
+
+- (void)tapStartButton {
+    [[NSNotificationCenter defaultCenter] postNotificationName:SetAppRootViewControllerNotification object:nil];
 }
 
 @end

@@ -8,9 +8,10 @@
 
 #import "AppDelegate.h"
 #import "WelcomeViewController.h"
+#import "RootViewController.h"
 
 @interface AppDelegate ()
-
+@property(nonatomic,strong) RootViewController *rootViewController;
 @end
 
 @implementation AppDelegate
@@ -21,6 +22,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = [[WelcomeViewController alloc] init];
     [self.window makeKeyAndVisible];
+    
+    [self createRootViewController];
+    
+    [self registerNotificatioin];
+    
     return YES;
 }
 
@@ -46,6 +52,20 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
+}
+
+#pragma mark - rootViewController method
+- (void)createRootViewController {
+    self.rootViewController = [[RootViewController alloc] init];
+}
+
+- (void)setRootViewControllerForWindowRootViewController {
+    self.window.rootViewController = self.rootViewController;
+}
+
+#pragma mark - register notification
+- (void)registerNotificatioin {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setRootViewControllerForWindowRootViewController) name:SetAppRootViewControllerNotification object:nil];
 }
 
 #pragma mark - Core Data stack
