@@ -17,6 +17,7 @@
 		185B89991BCA41A800477778 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B89981BCA41A800477778 /* WelcomeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		185B899C1BCA41F900477778 /* WelcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B899B1BCA41F900477778 /* WelcomeView.m */; settings = {ASSET_TAGS = (); }; };
 		18DF49861BCD3969006AF4FC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DF49851BCD3969006AF4FC /* RootViewController.m */; settings = {ASSET_TAGS = (); }; };
+		18DF498E1BCD4995006AF4FC /* NSString+StringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DF498D1BCD4995006AF4FC /* NSString+StringAdditions.m */; settings = {ASSET_TAGS = (); }; };
 		A87BFE457C6AE026B1C4B5B8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D1E0D71F29177210AF9017 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,8 @@
 		18DF49851BCD3969006AF4FC /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		18DF49871BCD3F8D006AF4FC /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		18DF49891BCD405A006AF4FC /* NotificationMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationMacro.h; sourceTree = "<group>"; };
+		18DF498C1BCD4995006AF4FC /* NSString+StringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringAdditions.h"; sourceTree = "<group>"; };
+		18DF498D1BCD4995006AF4FC /* NSString+StringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringAdditions.m"; sourceTree = "<group>"; };
 		86BDFBFD7247A93391043AA5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C6D1E0D71F29177210AF9017 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC6AE75A53C09B5A19018A4B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +134,7 @@
 				18DF49841BCD3969006AF4FC /* RootViewController.h */,
 				18DF49851BCD3969006AF4FC /* RootViewController.m */,
 				185B89961BCA417F00477778 /* Welcome */,
+				18DF498B1BCD4899006AF4FC /* Category */,
 				185B896C1BC93EA600477778 /* Assets.xcassets */,
 				185B89711BC93EA600477778 /* Info.plist */,
 				185B89691BC93EA600477778 /* Stock.xcdatamodeld */,
@@ -192,6 +196,15 @@
 			);
 			name = Macro;
 			path = Stock/Macro;
+			sourceTree = "<group>";
+		};
+		18DF498B1BCD4899006AF4FC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				18DF498C1BCD4995006AF4FC /* NSString+StringAdditions.h */,
+				18DF498D1BCD4995006AF4FC /* NSString+StringAdditions.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		7F10C8215A91B636197B6315 /* Pods */ = {
@@ -372,6 +385,7 @@
 				18DF49861BCD3969006AF4FC /* RootViewController.m in Sources */,
 				185B89991BCA41A800477778 /* WelcomeViewController.m in Sources */,
 				185B896B1BC93EA600477778 /* Stock.xcdatamodeld in Sources */,
+				18DF498E1BCD4995006AF4FC /* NSString+StringAdditions.m in Sources */,
 				185B895F1BC93EA600477778 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
