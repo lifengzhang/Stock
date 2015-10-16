@@ -8,8 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
+@class HomeViewController;
+@class PersonalViewController;
+
+
 @interface RootViewController : UIViewController
 
 @property (nonatomic,strong) UITabBarController *tabBarController;
+
+@property (nonatomic,strong) UINavigationController *homeViewNavController;
+@property (nonatomic,strong) HomeViewController *homeViewController;
+
+@property (nonatomic,strong) UINavigationController *personalViewNavController;
+@property (nonatomic,strong) PersonalViewController *personalViewController;
+
+
+- (UITabBarController *) getTabBarController;
 
 @end
