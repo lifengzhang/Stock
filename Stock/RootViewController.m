@@ -57,7 +57,7 @@
     
     self.personalViewNavController.tabBarItem.title = @"自选";
     
-    [self.personalViewNavController.tabBarItem setImage:[UIImage imageNamed:@"homeTabBarIcon"]];
+    [self.personalViewNavController.tabBarItem setImage:[UIImage imageNamed:@"personalTabBarIcon"]];
 }
 
 @end

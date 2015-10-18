@@ -21,6 +21,7 @@
 		18E194EC1BD133FB00494248 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E194EB1BD133FB00494248 /* HomeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		18E194EE1BD13A4200494248 /* Home.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E194ED1BD13A4200494248 /* Home.xcassets */; settings = {ASSET_TAGS = (); }; };
 		18E194F21BD13E0300494248 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E194F11BD13E0300494248 /* PersonalViewController.m */; settings = {ASSET_TAGS = (); }; };
+		18E194F41BD1D9E500494248 /* Personal.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E194F31BD1D9E500494248 /* Personal.xcassets */; settings = {ASSET_TAGS = (); }; };
 		A87BFE457C6AE026B1C4B5B8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D1E0D71F29177210AF9017 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		18E194ED1BD13A4200494248 /* Home.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Home.xcassets; sourceTree = "<group>"; };
 		18E194F01BD13E0300494248 /* PersonalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalViewController.h; sourceTree = "<group>"; };
 		18E194F11BD13E0300494248 /* PersonalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
+		18E194F31BD1D9E500494248 /* Personal.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Personal.xcassets; sourceTree = "<group>"; };
 		86BDFBFD7247A93391043AA5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C6D1E0D71F29177210AF9017 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC6AE75A53C09B5A19018A4B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 			children = (
 				185B89941BCA3F8000477778 /* Welcome.xcassets */,
 				18E194ED1BD13A4200494248 /* Home.xcassets */,
+				18E194F31BD1D9E500494248 /* Personal.xcassets */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				185B89951BCA3F8000477778 /* Welcome.xcassets in Resources */,
+				18E194F41BD1D9E500494248 /* Personal.xcassets in Resources */,
 				185B896D1BC93EA600477778 /* Assets.xcassets in Resources */,
 				18E194EE1BD13A4200494248 /* Home.xcassets in Resources */,
 			);
