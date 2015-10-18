@@ -22,6 +22,7 @@
 		18E194EE1BD13A4200494248 /* Home.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E194ED1BD13A4200494248 /* Home.xcassets */; settings = {ASSET_TAGS = (); }; };
 		18E194F21BD13E0300494248 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E194F11BD13E0300494248 /* PersonalViewController.m */; settings = {ASSET_TAGS = (); }; };
 		18E194F41BD1D9E500494248 /* Personal.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E194F31BD1D9E500494248 /* Personal.xcassets */; settings = {ASSET_TAGS = (); }; };
+		18E5CCD91BD3DC2000256C79 /* HttpURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5CCD81BD3DC2000256C79 /* HttpURLSession.m */; settings = {ASSET_TAGS = (); }; };
 		A87BFE457C6AE026B1C4B5B8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D1E0D71F29177210AF9017 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,8 @@
 		18E194F01BD13E0300494248 /* PersonalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalViewController.h; sourceTree = "<group>"; };
 		18E194F11BD13E0300494248 /* PersonalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
 		18E194F31BD1D9E500494248 /* Personal.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Personal.xcassets; sourceTree = "<group>"; };
+		18E5CCD71BD3DC2000256C79 /* HttpURLSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpURLSession.h; sourceTree = "<group>"; };
+		18E5CCD81BD3DC2000256C79 /* HttpURLSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpURLSession.m; sourceTree = "<group>"; };
 		86BDFBFD7247A93391043AA5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C6D1E0D71F29177210AF9017 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC6AE75A53C09B5A19018A4B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +149,7 @@
 				185B89961BCA417F00477778 /* Welcome */,
 				18E194E91BD133E600494248 /* Home */,
 				18E194EF1BD13DEC00494248 /* Personal */,
+				18E5CCD21BD3C02B00256C79 /* Network */,
 				18DF498B1BCD4899006AF4FC /* Category */,
 				185B896C1BC93EA600477778 /* Assets.xcassets */,
 				185B89711BC93EA600477778 /* Info.plist */,
@@ -237,6 +241,23 @@
 				18E194F11BD13E0300494248 /* PersonalViewController.m */,
 			);
 			path = Personal;
+			sourceTree = "<group>";
+		};
+		18E5CCD21BD3C02B00256C79 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				18E5CCD31BD3DBAA00256C79 /* HttpURLSession */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		18E5CCD31BD3DBAA00256C79 /* HttpURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				18E5CCD71BD3DC2000256C79 /* HttpURLSession.h */,
+				18E5CCD81BD3DC2000256C79 /* HttpURLSession.m */,
+			);
+			path = HttpURLSession;
 			sourceTree = "<group>";
 		};
 		7F10C8215A91B636197B6315 /* Pods */ = {
@@ -414,6 +435,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E5CCD91BD3DC2000256C79 /* HttpURLSession.m in Sources */,
 				18E194F21BD13E0300494248 /* PersonalViewController.m in Sources */,
 				185B899C1BCA41F900477778 /* WelcomeView.m in Sources */,
 				185B89621BC93EA600477778 /* AppDelegate.m in Sources */,
