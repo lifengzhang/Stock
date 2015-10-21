@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface HttpURLSession : NSObject
+@interface HttpURLSession : NSObject <NSURLSessionTaskDelegate>
 
 /**
  * 

@@ -10,7 +10,7 @@
 
 @implementation HttpURLSession
 
--(instancetype)init {
+- (instancetype)init {
     self = [super init];
     if (self) {
         [self initDefaultSession];
@@ -18,7 +18,7 @@
     return self;
 }
 
-- (void)initDefaultSession{
+- (void)initDefaultSessionNoDelegate{
     NSURLSessionConfiguration *defaultSessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
     
     self.defaultSession = [NSURLSession sessionWithConfiguration:defaultSessionConfiguration delegate:nil delegateQueue:[NSOperationQueue mainQueue]];
@@ -32,6 +32,27 @@
         NSLog(@"DATA:\n%@\nEND DATA\n",jsonDict);
 
     }]resume];
+}
+
+- (void)initDefaultSession{
+    NSURLSessionConfiguration *defaultSessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    
+    self.defaultSession = [NSURLSession sessionWithConfiguration:defaultSessionConfiguration delegate:self delegateQueue:[NSOperationQueue mainQueue]];
+    
+    NSURLSessionDataTask *sessionDataTask = [self.defaultSession dataTaskWithURL:[NSURL URLWithString:@"http://ctxalgo.com/api/stocks"]];
+    
+    [sessionDataTask resume];
+}
+
+
+#pragma protocol NSURLSessionTaskDelegate <NSURLSessionDelegate>
+- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveData:(NSData *)data {
+    
+}
+
+#pragma protocol NSURLSessionTaskDelegate <NSURLSessionDelegate>
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(nullable NSError *)error {
+    
 }
 
 @end

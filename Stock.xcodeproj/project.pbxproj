@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182A17721BD7CDCA006FE38D /* StockListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A17711BD7CDCA006FE38D /* StockListView.m */; settings = {ASSET_TAGS = (); }; };
+		182A17751BD7D23D006FE38D /* StockListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A17741BD7D23D006FE38D /* StockListTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		185B895F1BC93EA600477778 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B895E1BC93EA600477778 /* main.m */; };
 		185B89621BC93EA600477778 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B89611BC93EA600477778 /* AppDelegate.m */; };
 		185B896B1BC93EA600477778 /* Stock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 185B89691BC93EA600477778 /* Stock.xcdatamodeld */; };
@@ -44,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		182A17701BD7CDCA006FE38D /* StockListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockListView.h; sourceTree = "<group>"; };
+		182A17711BD7CDCA006FE38D /* StockListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockListView.m; sourceTree = "<group>"; };
+		182A17731BD7D23D006FE38D /* StockListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockListTableViewCell.h; sourceTree = "<group>"; };
+		182A17741BD7D23D006FE38D /* StockListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockListTableViewCell.m; sourceTree = "<group>"; };
 		185B895A1BC93EA600477778 /* Stock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185B895E1BC93EA600477778 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		185B89601BC93EA600477778 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -239,6 +245,7 @@
 			children = (
 				18E194F01BD13E0300494248 /* PersonalViewController.h */,
 				18E194F11BD13E0300494248 /* PersonalViewController.m */,
+				18E6B6EB1BD7C9360070A5BA /* StockList */,
 			);
 			path = Personal;
 			sourceTree = "<group>";
@@ -258,6 +265,17 @@
 				18E5CCD81BD3DC2000256C79 /* HttpURLSession.m */,
 			);
 			path = HttpURLSession;
+			sourceTree = "<group>";
+		};
+		18E6B6EB1BD7C9360070A5BA /* StockList */ = {
+			isa = PBXGroup;
+			children = (
+				182A17701BD7CDCA006FE38D /* StockListView.h */,
+				182A17711BD7CDCA006FE38D /* StockListView.m */,
+				182A17731BD7D23D006FE38D /* StockListTableViewCell.h */,
+				182A17741BD7D23D006FE38D /* StockListTableViewCell.m */,
+			);
+			path = StockList;
 			sourceTree = "<group>";
 		};
 		7F10C8215A91B636197B6315 /* Pods */ = {
@@ -441,9 +459,11 @@
 				185B89621BC93EA600477778 /* AppDelegate.m in Sources */,
 				18DF49861BCD3969006AF4FC /* RootViewController.m in Sources */,
 				185B89991BCA41A800477778 /* WelcomeViewController.m in Sources */,
+				182A17721BD7CDCA006FE38D /* StockListView.m in Sources */,
 				185B896B1BC93EA600477778 /* Stock.xcdatamodeld in Sources */,
 				18DF498E1BCD4995006AF4FC /* NSString+StringAdditions.m in Sources */,
 				185B895F1BC93EA600477778 /* main.m in Sources */,
+				182A17751BD7D23D006FE38D /* StockListTableViewCell.m in Sources */,
 				18E194EC1BD133FB00494248 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
