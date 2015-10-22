@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		182A17721BD7CDCA006FE38D /* StockListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A17711BD7CDCA006FE38D /* StockListView.m */; settings = {ASSET_TAGS = (); }; };
 		182A17751BD7D23D006FE38D /* StockListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A17741BD7D23D006FE38D /* StockListTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		182A17781BD7D90B006FE38D /* WelcomeTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A17771BD7D90B006FE38D /* WelcomeTestView.m */; settings = {ASSET_TAGS = (); }; };
 		185B895F1BC93EA600477778 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B895E1BC93EA600477778 /* main.m */; };
 		185B89621BC93EA600477778 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B89611BC93EA600477778 /* AppDelegate.m */; };
 		185B896B1BC93EA600477778 /* Stock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 185B89691BC93EA600477778 /* Stock.xcdatamodeld */; };
@@ -50,6 +51,8 @@
 		182A17711BD7CDCA006FE38D /* StockListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockListView.m; sourceTree = "<group>"; };
 		182A17731BD7D23D006FE38D /* StockListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockListTableViewCell.h; sourceTree = "<group>"; };
 		182A17741BD7D23D006FE38D /* StockListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockListTableViewCell.m; sourceTree = "<group>"; };
+		182A17761BD7D90B006FE38D /* WelcomeTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeTestView.h; sourceTree = "<group>"; };
+		182A17771BD7D90B006FE38D /* WelcomeTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeTestView.m; sourceTree = "<group>"; };
 		185B895A1BC93EA600477778 /* Stock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185B895E1BC93EA600477778 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		185B89601BC93EA600477778 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -209,6 +212,8 @@
 				185B89981BCA41A800477778 /* WelcomeViewController.m */,
 				185B899A1BCA41F900477778 /* WelcomeView.h */,
 				185B899B1BCA41F900477778 /* WelcomeView.m */,
+				182A17761BD7D90B006FE38D /* WelcomeTestView.h */,
+				182A17771BD7D90B006FE38D /* WelcomeTestView.m */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -460,6 +465,7 @@
 				18DF49861BCD3969006AF4FC /* RootViewController.m in Sources */,
 				185B89991BCA41A800477778 /* WelcomeViewController.m in Sources */,
 				182A17721BD7CDCA006FE38D /* StockListView.m in Sources */,
+				182A17781BD7D90B006FE38D /* WelcomeTestView.m in Sources */,
 				185B896B1BC93EA600477778 /* Stock.xcdatamodeld in Sources */,
 				18DF498E1BCD4995006AF4FC /* NSString+StringAdditions.m in Sources */,
 				185B895F1BC93EA600477778 /* main.m in Sources */,

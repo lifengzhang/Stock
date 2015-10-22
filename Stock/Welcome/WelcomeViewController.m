@@ -8,6 +8,7 @@
 
 #import "WelcomeViewController.h"
 #import "WelcomeView.h"
+#import "WelcomeTestView.h"
 
 @interface WelcomeViewController ()
 
@@ -19,6 +20,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self createWelcomeTextView];
+    return;
     
     self.welcomeView = [[WelcomeView alloc] initWithFrame:CGRectZero backgroundImageStr:@"welcome-background-image"];
     [self.view addSubview:self.welcomeView];
@@ -41,6 +45,15 @@
     dispatch_after(when, dispatch_get_main_queue(), ^{
         [self.welcomeView viewAnimation];
     });
+}
+
+- (void)createWelcomeTextView {
+    WelcomeTestView *testView= [[WelcomeTestView alloc] initWithFrame:CGRectZero backgroundImageStr:@"welcome-background-image"];
+    [self.view addSubview:testView];
+    
+    [testView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
