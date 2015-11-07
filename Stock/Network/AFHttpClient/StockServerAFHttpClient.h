@@ -15,7 +15,11 @@
 #pragma mark - Singleton
 + (instancetype)sharedClient;
 
-- (NSURLSessionDataTask *)requestStockListWithSucceedBlock:(void (^)())succeedBlock
+- (NSURLSessionDataTask *)requestStockListWithSucceedBlock:(void (^)(NSDictionary *responseDict))succeedBlock
                                                failedBlock:(void (^)(NSError *error))failedBlock;
+
+
+- (NSURLSessionDataTask *)requestStockIndicesWithSucceedBlock:(void (^)(NSDictionary *responseDict))succeedBlock
+                                                  failedBlock:(void (^)(NSError *error))failedBlock;
 
 @end

@@ -12,11 +12,13 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
-#import "NotificationMacro.h"
+#import "AppDelegate.h"
+
 #import "Masonry.h"
-#import "HttpURLSession.h"
 #import "AFNetworking.h"
 
+#import "NotificationMacro.h"
 #import "StockServerManager.h"
+#import "HttpURLSession.h"
 
 #endif /* PrefixHeader_pch */

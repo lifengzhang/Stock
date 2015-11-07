@@ -8,6 +8,8 @@
 
 #import "PersonalViewController.h"
 #import "StockListView.h"
+#import "Stock.h"
+#import "AppDelegate.h"
 
 @interface PersonalViewController ()
 @property (nonatomic,strong) StockListView *stockListView;
@@ -35,11 +37,13 @@
 }
 
 - (void)fetchData {
-    [stockServerManager requestStockListWithSucceedBlock:^{
+    
+    [stockServerManager requestStockIndicesWithSucceedBlock:^{
         
     } failedBlock:^(NSError *error) {
         
     }];
+    
 }
 
 @end

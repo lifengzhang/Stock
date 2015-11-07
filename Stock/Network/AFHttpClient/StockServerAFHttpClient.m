@@ -32,12 +32,19 @@ static StockServerAFHttpClient *sharedClient = nil;
     return sharedClient;
 }
 
-- (NSURLSessionDataTask *)requestStockListWithSucceedBlock:(void (^)())succeedBlock
+- (NSURLSessionDataTask *)requestStockListWithSucceedBlock:(void (^)(NSDictionary *responseDict))succeedBlock
                                                failedBlock:(void (^)(NSError *error))failedBlock {
     
-    return [self asyncRequestWithURL:StockServer_APIPath_Stocks method:ServerRequestMethodTypeGet parameter:nil retry:NO success:^(NSDictionary *responseDict) {
+    return [self asyncRequestWithURL:StockServer_APIPath_Stocks method:ServerRequestMethodTypeGet parameter:nil retry:NO success:succeedBlock failure:^(NSError *error) {
         
-    } failure:^(NSError *error) {
+    }];
+    
+};
+
+- (NSURLSessionDataTask *)requestStockIndicesWithSucceedBlock:(void (^)(NSDictionary *responseDict))succeedBlock
+                                                  failedBlock:(void (^)(NSError *error))failedBlock {
+    
+    return [self asyncRequestWithURL:StockServer_APIPath_Indices method:ServerRequestMethodTypeGet parameter:nil retry:NO success:succeedBlock failure:^(NSError *error) {
         
     }];
     

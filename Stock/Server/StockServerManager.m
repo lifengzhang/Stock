@@ -10,6 +10,8 @@
 
 #import "StockServerAFHttpClient.h"
 
+#import "Stock.h"
+
 @implementation StockServerManager
 
 #pragma mark - Singleton
@@ -24,8 +26,46 @@ static StockServerManager *sharedAPIManager = nil;
 
 - (void)requestStockListWithSucceedBlock:(void (^)())succeedBlock
                              failedBlock:(void (^)(NSError * error))failedBlock {
-    [ServerAFHttpClient requestStockListWithSucceedBlock:^{
+    [ServerAFHttpClient requestStockListWithSucceedBlock:^(NSDictionary *responseDict) {
         
+        AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+        
+        if (responseDict && [responseDict isKindOfClass:[NSDictionary class]]) {
+            
+            if (succeedBlock) {
+                succeedBlock();
+            }
+        }
+
+    } failedBlock:^(NSError *error) {
+        
+    }];
+}
+
+- (void)requestStockIndicesWithSucceedBlock:(void (^)())succeedBlock
+                                failedBlock:(void (^)(NSError * error))failedBlock {
+    
+    [ServerAFHttpClient requestStockIndicesWithSucceedBlock:^(NSDictionary *responseDict) {
+
+        AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+        
+        if (responseDict && [responseDict isKindOfClass:[NSDictionary class]]) {
+            
+            NSMutableArray * stockList = [NSMutableArray array];
+            
+            NSArray *keysArray = [responseDict allKeys];
+            
+            for (NSString *key in keysArray) {
+                
+                Stock *stock = [Stock insertItemWithCode:key name:responseDict[key] inManagedObjectContext:appDelegate.managedObjectContext];
+                
+                [stockList addObject:stock];
+            }
+            
+            if (succeedBlock) {
+                succeedBlock();
+            }
+        }
     } failedBlock:^(NSError *error) {
         
     }];

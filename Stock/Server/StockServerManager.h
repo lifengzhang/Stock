@@ -22,4 +22,9 @@
 - (void)requestStockListWithSucceedBlock:(void (^)())succeedBlock
                              failedBlock:(void (^)(NSError * error))failedBlock;
 
+
+#pragma mark stock Indices
+- (void)requestStockIndicesWithSucceedBlock:(void (^)())succeedBlock
+                                failedBlock:(void (^)(NSError * error))failedBlock;
+
 @end
