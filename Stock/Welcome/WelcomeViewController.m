@@ -21,8 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self createWelcomeTextView];
-    return;
+//    [self createWelcomeTextView];
+//    return;
     
     self.welcomeView = [[WelcomeView alloc] initWithFrame:CGRectZero backgroundImageStr:@"welcome-background-image"];
     [self.view addSubview:self.welcomeView];

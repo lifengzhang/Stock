@@ -15,5 +15,8 @@
 #import "NotificationMacro.h"
 #import "Masonry.h"
 #import "HttpURLSession.h"
+#import "AFNetworking.h"
+
+#import "StockServerManager.h"
 
 #endif /* PrefixHeader_pch */

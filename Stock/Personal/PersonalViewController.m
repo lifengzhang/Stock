@@ -17,6 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self fetchData];
+    
     self.stockListView = [[StockListView alloc] init];
     
     [self.view addSubview:self.stockListView];
@@ -31,5 +34,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)fetchData {
+    [stockServerManager requestStockListWithSucceedBlock:^{
+        
+    } failedBlock:^(NSError *error) {
+        
+    }];
+}
 
 @end

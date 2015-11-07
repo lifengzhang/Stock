@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1811E3221BEDDAA40027A19A /* StockHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811E3211BEDDAA40027A19A /* StockHTTPSessionManager.m */; settings = {ASSET_TAGS = (); }; };
+		1811E3251BEDDBF60027A19A /* StockNetworkCommonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811E3241BEDDBF60027A19A /* StockNetworkCommonData.m */; settings = {ASSET_TAGS = (); }; };
+		1811E3281BEDDE030027A19A /* StockServerAFHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811E3271BEDDE030027A19A /* StockServerAFHttpClient.m */; settings = {ASSET_TAGS = (); }; };
 		182A17721BD7CDCA006FE38D /* StockListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A17711BD7CDCA006FE38D /* StockListView.m */; settings = {ASSET_TAGS = (); }; };
 		182A17751BD7D23D006FE38D /* StockListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A17741BD7D23D006FE38D /* StockListTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		182A17781BD7D90B006FE38D /* WelcomeTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A17771BD7D90B006FE38D /* WelcomeTestView.m */; settings = {ASSET_TAGS = (); }; };
@@ -19,6 +22,7 @@
 		185B89951BCA3F8000477778 /* Welcome.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185B89941BCA3F8000477778 /* Welcome.xcassets */; settings = {ASSET_TAGS = (); }; };
 		185B89991BCA41A800477778 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B89981BCA41A800477778 /* WelcomeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		185B899C1BCA41F900477778 /* WelcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B899B1BCA41F900477778 /* WelcomeView.m */; settings = {ASSET_TAGS = (); }; };
+		1880864A1BDFC19400DF4FD3 /* StockServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 188086491BDFC19400DF4FD3 /* StockServerManager.m */; settings = {ASSET_TAGS = (); }; };
 		18DF49861BCD3969006AF4FC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DF49851BCD3969006AF4FC /* RootViewController.m */; settings = {ASSET_TAGS = (); }; };
 		18DF498E1BCD4995006AF4FC /* NSString+StringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DF498D1BCD4995006AF4FC /* NSString+StringAdditions.m */; settings = {ASSET_TAGS = (); }; };
 		18E194EC1BD133FB00494248 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E194EB1BD133FB00494248 /* HomeViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -47,6 +51,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1811E3201BEDDAA40027A19A /* StockHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockHTTPSessionManager.h; sourceTree = "<group>"; };
+		1811E3211BEDDAA40027A19A /* StockHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockHTTPSessionManager.m; sourceTree = "<group>"; };
+		1811E3231BEDDBF60027A19A /* StockNetworkCommonData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockNetworkCommonData.h; sourceTree = "<group>"; };
+		1811E3241BEDDBF60027A19A /* StockNetworkCommonData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockNetworkCommonData.m; sourceTree = "<group>"; };
+		1811E3261BEDDE030027A19A /* StockServerAFHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockServerAFHttpClient.h; sourceTree = "<group>"; };
+		1811E3271BEDDE030027A19A /* StockServerAFHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockServerAFHttpClient.m; sourceTree = "<group>"; };
+		1811E32A1BEDE3BF0027A19A /* StockServerAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockServerAPI.h; sourceTree = "<group>"; };
 		182A17701BD7CDCA006FE38D /* StockListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockListView.h; sourceTree = "<group>"; };
 		182A17711BD7CDCA006FE38D /* StockListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockListView.m; sourceTree = "<group>"; };
 		182A17731BD7D23D006FE38D /* StockListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockListTableViewCell.h; sourceTree = "<group>"; };
@@ -71,6 +82,8 @@
 		185B89981BCA41A800477778 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		185B899A1BCA41F900477778 /* WelcomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeView.h; sourceTree = "<group>"; };
 		185B899B1BCA41F900477778 /* WelcomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeView.m; sourceTree = "<group>"; };
+		188086481BDFC19400DF4FD3 /* StockServerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockServerManager.h; sourceTree = "<group>"; };
+		188086491BDFC19400DF4FD3 /* StockServerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockServerManager.m; sourceTree = "<group>"; };
 		18DF49841BCD3969006AF4FC /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		18DF49851BCD3969006AF4FC /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		18DF49871BCD3F8D006AF4FC /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -158,6 +171,7 @@
 				185B89961BCA417F00477778 /* Welcome */,
 				18E194E91BD133E600494248 /* Home */,
 				18E194EF1BD13DEC00494248 /* Personal */,
+				1880863F1BDFB6FC00DF4FD3 /* Server */,
 				18E5CCD21BD3C02B00256C79 /* Network */,
 				18DF498B1BCD4899006AF4FC /* Category */,
 				185B896C1BC93EA600477778 /* Assets.xcassets */,
@@ -218,6 +232,27 @@
 			path = Welcome;
 			sourceTree = "<group>";
 		};
+		1880863F1BDFB6FC00DF4FD3 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				1811E32A1BEDE3BF0027A19A /* StockServerAPI.h */,
+				188086481BDFC19400DF4FD3 /* StockServerManager.h */,
+				188086491BDFC19400DF4FD3 /* StockServerManager.m */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		188086441BDFBDB500DF4FD3 /* AFHttpClient */ = {
+			isa = PBXGroup;
+			children = (
+				1811E3201BEDDAA40027A19A /* StockHTTPSessionManager.h */,
+				1811E3211BEDDAA40027A19A /* StockHTTPSessionManager.m */,
+				1811E3261BEDDE030027A19A /* StockServerAFHttpClient.h */,
+				1811E3271BEDDE030027A19A /* StockServerAFHttpClient.m */,
+			);
+			path = AFHttpClient;
+			sourceTree = "<group>";
+		};
 		18DF49881BCD3FE9006AF4FC /* Macro */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +293,9 @@
 		18E5CCD21BD3C02B00256C79 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				1811E3231BEDDBF60027A19A /* StockNetworkCommonData.h */,
+				1811E3241BEDDBF60027A19A /* StockNetworkCommonData.m */,
+				188086441BDFBDB500DF4FD3 /* AFHttpClient */,
 				18E5CCD31BD3DBAA00256C79 /* HttpURLSession */,
 			);
 			path = Network;
@@ -461,7 +499,11 @@
 				18E5CCD91BD3DC2000256C79 /* HttpURLSession.m in Sources */,
 				18E194F21BD13E0300494248 /* PersonalViewController.m in Sources */,
 				185B899C1BCA41F900477778 /* WelcomeView.m in Sources */,
+				1880864A1BDFC19400DF4FD3 /* StockServerManager.m in Sources */,
+				1811E3251BEDDBF60027A19A /* StockNetworkCommonData.m in Sources */,
 				185B89621BC93EA600477778 /* AppDelegate.m in Sources */,
+				1811E3281BEDDE030027A19A /* StockServerAFHttpClient.m in Sources */,
+				1811E3221BEDDAA40027A19A /* StockHTTPSessionManager.m in Sources */,
 				18DF49861BCD3969006AF4FC /* RootViewController.m in Sources */,
 				185B89991BCA41A800477778 /* WelcomeViewController.m in Sources */,
 				182A17721BD7CDCA006FE38D /* StockListView.m in Sources */,
