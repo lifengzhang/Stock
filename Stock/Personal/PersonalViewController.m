@@ -38,7 +38,7 @@
 
 - (void)fetchData {
     
-    [stockServerManager requestStockIndicesWithSucceedBlock:^{
+    [stockServerManager requestStockWithCode:@"sh601006" SucceedBlock:^{
         
     } failedBlock:^(NSError *error) {
         

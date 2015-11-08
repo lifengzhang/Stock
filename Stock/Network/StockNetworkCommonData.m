@@ -26,6 +26,8 @@ static StockNetworkCommonData *sharedInstance = nil;
 + (NSMutableDictionary *)commonParamMDictionary {
     NSMutableDictionary *commonParamDictionary = [[NSMutableDictionary alloc] init];
     
+    commonParamDictionary[@"key"] = @"fca64e125e114e8a92fbe680139e08fa";
+    
     return commonParamDictionary;
 }
 

@@ -27,4 +27,10 @@
 - (void)requestStockIndicesWithSucceedBlock:(void (^)())succeedBlock
                                 failedBlock:(void (^)(NSError * error))failedBlock;
 
+
+#pragma mark stock
+- (void)requestStockWithCode:(NSString *)code
+                SucceedBlock:(void (^)())succeedBlock
+                 failedBlock:(void (^)(NSError * error))failedBlock;
+
 @end

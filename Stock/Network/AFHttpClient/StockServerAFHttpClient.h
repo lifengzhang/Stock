@@ -22,4 +22,8 @@
 - (NSURLSessionDataTask *)requestStockIndicesWithSucceedBlock:(void (^)(NSDictionary *responseDict))succeedBlock
                                                   failedBlock:(void (^)(NSError *error))failedBlock;
 
+- (NSURLSessionDataTask *)requestStockWithParam:(NSDictionary *)paramDict
+                                   SucceedBlock:(void (^)(NSDictionary *responseDict))succeedBlock
+                                    failedBlock:(void (^)(NSError *error))failedBlock;
+
 @end

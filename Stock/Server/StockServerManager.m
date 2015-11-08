@@ -71,4 +71,22 @@ static StockServerManager *sharedAPIManager = nil;
     }];
 }
 
+- (void)requestStockWithCode:(NSString *)code
+                SucceedBlock:(void (^)())succeedBlock
+                 failedBlock:(void (^)(NSError * error))failedBlock {
+    if (code == nil || code.length == 0) {
+        return;
+    }
+    
+    NSMutableDictionary * paramDict = [NSMutableDictionary dictionary];
+    paramDict[@"gid"] = code;
+    
+    [ServerAFHttpClient requestStockWithParam:paramDict SucceedBlock:^(NSDictionary *responseDict) {
+        NSLog(@"%@",responseDict);
+    } failedBlock:^(NSError *error) {
+        
+    }];
+    
+}
+
 @end

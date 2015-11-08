@@ -20,11 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Stock/Network/AFHttpClient/StockHTTPSessionManager.m"
-            timestampString = "468587559.982041"
+            timestampString = "468688076.457055"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "-asyncRequestWithURL:method:parameter:retry:success:failure:"
             landmarkType = "5">
          </BreakpointContent>
@@ -36,13 +36,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Stock/Server/StockServerManager.m"
-            timestampString = "468598062.534938"
+            timestampString = "468686718.956072"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "-requestStockIndicesWithSucceedBlock:failedBlock:"
-            landmarkType = "5">
+            startingLineNumber = "100"
+            endingLineNumber = "100">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -66,12 +64,122 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Stock/Server/StockServerManager.m"
-            timestampString = "468598314.963486"
+            timestampString = "468686718.956072"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "-requestStockIndicesWithSucceedBlock:failedBlock:"
+            startingLineNumber = "95"
+            endingLineNumber = "95">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stock/Server/StockServerManager.m"
+            timestampString = "468686718.956072"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "-requestStockWithCode:SucceedBlock:failedBlock:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stock/Server/StockServerManager.m"
+            timestampString = "468686718.956072"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "-requestStockWithCode:SucceedBlock:failedBlock:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stock/Network/AFHttpClient/StockHTTPSessionManager.m"
+            timestampString = "468688058.045171"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "-asyncRequestWithURL:method:parameter:retry:success:failure:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__86-[StockHTTPSessionManager asyncRequestWithURL:method:parameter:retry:success:failure:]_block_invoke19"
+                  moduleName = "Stock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Project/Stock/Stock/Network/AFHttpClient/StockHTTPSessionManager.m"
+                  timestampString = "468688058.139591"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "77">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__86-[StockHTTPSessionManager asyncRequestWithURL:method:parameter:retry:success:failure:]_block_invoke_2"
+                  moduleName = "Stock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Project/Stock/Stock/Network/AFHttpClient/StockHTTPSessionManager.m"
+                  timestampString = "468688058.139718"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "75">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stock/Network/AFHttpClient/StockHTTPSessionManager.m"
+            timestampString = "468688058.045171"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "-asyncRequestWithURL:method:parameter:retry:success:failure:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stock/Network/AFHttpClient/StockHTTPSessionManager.m"
+            timestampString = "468687906.088022"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "-asyncRequestWithURL:method:parameter:retry:success:failure:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
