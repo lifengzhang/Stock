@@ -57,7 +57,13 @@ static StockServerAFHttpClient *sharedClient = nil;
                                    SucceedBlock:(void (^)(NSDictionary *responseDict))succeedBlock
                                     failedBlock:(void (^)(NSError *error))failedBlock {
     
-    return [self asyncRequestWithURL:StockServer_APIPath_Stock method:ServerRequestMethodTypeGet parameter:paramDict retry:NO success:succeedBlock failure:^(NSError *error) {
+    return [self asyncRequestWithURL:StockServer_APIPath_Stock method:ServerRequestMethodTypePost parameter:paramDict retry:NO success:^(NSDictionary *responseDict) {
+        
+        if (responseDict[@"result"]) {
+            succeedBlock(responseDict[@"result"]);
+        }
+        
+    } failure:^(NSError *error) {
         
     }];
     

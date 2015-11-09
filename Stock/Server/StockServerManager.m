@@ -10,6 +10,7 @@
 
 #import "StockServerAFHttpClient.h"
 
+#import "User.h"
 #import "Stock.h"
 
 @implementation StockServerManager
@@ -57,9 +58,7 @@ static StockServerManager *sharedAPIManager = nil;
             
             for (NSString *key in keysArray) {
                 
-                Stock *stock = [Stock insertItemWithCode:key name:responseDict[key] inManagedObjectContext:appDelegate.managedObjectContext];
                 
-                [stockList addObject:stock];
             }
             
             if (succeedBlock) {
@@ -83,6 +82,15 @@ static StockServerManager *sharedAPIManager = nil;
     
     [ServerAFHttpClient requestStockWithParam:paramDict SucceedBlock:^(NSDictionary *responseDict) {
         NSLog(@"%@",responseDict);
+        AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+        
+        Stock *stock = [Stock insertItemInManagedObjectContext:appDelegate.managedObjectContext];
+        [stock setStockPropertiesWith:responseDict[@"data"]];
+        
+        User *user = [User insertItemInManagedObjectContext:appDelegate.managedObjectContext];
+        [user addStocklistObject:stock];
+        NSLog(@"user %@",user);
+        
     } failedBlock:^(NSError *error) {
         
     }];

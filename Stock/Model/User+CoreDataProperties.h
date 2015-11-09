@@ -23,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface User (CoreDataGeneratedAccessors)
 
++ (instancetype)insertItemInManagedObjectContext:(NSManagedObjectContext *)managedObjectContext;
+
 - (void)insertObject:(Stock *)value inStocklistAtIndex:(NSUInteger)idx;
 - (void)removeObjectFromStocklistAtIndex:(NSUInteger)idx;
 - (void)insertStocklist:(NSArray<Stock *> *)value atIndexes:(NSIndexSet *)indexes;

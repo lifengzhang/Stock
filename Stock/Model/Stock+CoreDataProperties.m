@@ -16,21 +16,26 @@
 @dynamic code;
 @dynamic name;
 
-+ (instancetype)insertItemWithCode:(NSString *)code
-                              name:(NSString *)name
-             inManagedObjectContext:(NSManagedObjectContext *)managedObjectContext
++ (instancetype)insertItemInManagedObjectContext:(NSManagedObjectContext *)managedObjectContext
 {
     
     Stock* stock = [NSEntityDescription insertNewObjectForEntityForName:self.entityName
                                                inManagedObjectContext:managedObjectContext];
-    stock.name = name;
-    stock.code = code;
+    
+    
     return stock;
 }
 
 + (NSString*)entityName
 {
     return @"Stock";
+}
+
+- (void)setStockPropertiesWith:(NSDictionary *)dict {
+    
+    self.name = dict[@"name"];
+    self.code = dict[@"gid"];
+    
 }
 
 @end

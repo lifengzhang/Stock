@@ -11,5 +11,5 @@
 
 #define StockServer_APIPath_Stocks            @"api/stocks"
 #define StockServer_APIPath_Indices           @"api/indices"
-#define StockServer_APIPath_Stock             @"stock/hq"
+#define StockServer_APIPath_Stock             @"stock/hs"
 #endif /* StockServerAPI_h */

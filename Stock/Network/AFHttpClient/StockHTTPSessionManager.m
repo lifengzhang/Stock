@@ -35,8 +35,9 @@
             }if ([responseObject isKindOfClass:[NSData class]]) {
                 id json = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
                 if ([json isKindOfClass:[NSDictionary class]]) {
+                    NSDictionary *resultDict = (NSDictionary *)json;
                     if (success) {
-                        success(responseObject);
+                        success(resultDict);
                     }
                 }
             }
@@ -49,7 +50,19 @@
     else {
         task =
         [self POST:urlString parameters:allParamMDict success:^(NSURLSessionDataTask *task, id responseObject) {
-            
+            if ([responseObject isKindOfClass:[NSDictionary class]]) {
+                if (success) {
+                    success(responseObject);
+                }
+            }if ([responseObject isKindOfClass:[NSData class]]) {
+                id json = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+                if ([json isKindOfClass:[NSDictionary class]]) {
+                    NSDictionary *resultDict = (NSDictionary *)json;
+                    if (success) {
+                        success(resultDict);
+                    }
+                }
+            }
         } failure:^(NSURLSessionDataTask *task, NSError *error) {
             
         }];

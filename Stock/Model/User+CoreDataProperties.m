@@ -17,4 +17,25 @@
 @dynamic userid;
 @dynamic stocklist;
 
++ (instancetype)insertItemInManagedObjectContext:(NSManagedObjectContext *)managedObjectContext {
+    
+    NSFetchRequest* request = [NSFetchRequest fetchRequestWithEntityName:[User entityName]];
+    
+    NSArray* objects = [managedObjectContext executeFetchRequest:request error:NULL];
+    
+    User *user = [objects lastObject];
+    
+    if (!user) {
+        user = [NSEntityDescription insertNewObjectForEntityForName:[User entityName]
+                                             inManagedObjectContext:managedObjectContext];
+    }
+    
+    return user;
+}
+
++ (NSString*)entityName
+{
+    return @"User";
+}
+
 @end

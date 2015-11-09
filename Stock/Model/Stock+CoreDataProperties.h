@@ -18,9 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, retain) NSString *code;
 @property (nullable, nonatomic, retain) NSString *name;
 
-+ (instancetype)insertItemWithCode:(NSString *)code
-                              name:(NSString *)name
-            inManagedObjectContext:(NSManagedObjectContext *)managedObjectContext;
++ (instancetype)insertItemInManagedObjectContext:(NSManagedObjectContext *)managedObjectContext;
+
+- (void)setStockPropertiesWith:(NSDictionary *)dict;
 
 @end
 
