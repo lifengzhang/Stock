@@ -17,6 +17,8 @@
 		182A17781BD7D90B006FE38D /* WelcomeTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A17771BD7D90B006FE38D /* WelcomeTestView.m */; settings = {ASSET_TAGS = (); }; };
 		18364F981BEF6AB900F14235 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 18364F951BEF6AB900F14235 /* User+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
 		18364F991BEF6AB900F14235 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 18364F971BEF6AB900F14235 /* User.m */; settings = {ASSET_TAGS = (); }; };
+		18364F9D1BF2416F00F14235 /* CrashReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18364F9C1BF2416F00F14235 /* CrashReporter.m */; settings = {ASSET_TAGS = (); }; };
+		18364F9F1BF2466100F14235 /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18364F9E1BF2466100F14235 /* CrashReporter.framework */; settings = {ASSET_TAGS = (); }; };
 		185B895F1BC93EA600477778 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B895E1BC93EA600477778 /* main.m */; };
 		185B89621BC93EA600477778 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B89611BC93EA600477778 /* AppDelegate.m */; };
 		185B896B1BC93EA600477778 /* Stock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 185B89691BC93EA600477778 /* Stock.xcdatamodeld */; };
@@ -76,6 +78,9 @@
 		18364F951BEF6AB900F14235 /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
 		18364F961BEF6AB900F14235 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		18364F971BEF6AB900F14235 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		18364F9B1BF2416F00F14235 /* CrashReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashReporter.h; sourceTree = "<group>"; };
+		18364F9C1BF2416F00F14235 /* CrashReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashReporter.m; sourceTree = "<group>"; };
+		18364F9E1BF2466100F14235 /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CrashReporter.framework; sourceTree = "<group>"; };
 		185B895A1BC93EA600477778 /* Stock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185B895E1BC93EA600477778 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		185B89601BC93EA600477778 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -121,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A87BFE457C6AE026B1C4B5B8 /* libPods.a in Frameworks */,
+				18364F9F1BF2466100F14235 /* CrashReporter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +150,7 @@
 		11F90861E7046BF9AF1E066C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18364F9E1BF2466100F14235 /* CrashReporter.framework */,
 				C6D1E0D71F29177210AF9017 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -162,6 +169,15 @@
 				1811E3381BEE3B280027A19A /* Stock.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		18364F9A1BF2412A00F14235 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				18364F9B1BF2416F00F14235 /* CrashReporter.h */,
+				18364F9C1BF2416F00F14235 /* CrashReporter.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		185B89511BC93EA600477778 = {
@@ -202,6 +218,7 @@
 				1880863F1BDFB6FC00DF4FD3 /* Server */,
 				18E5CCD21BD3C02B00256C79 /* Network */,
 				18DF498B1BCD4899006AF4FC /* Category */,
+				18364F9A1BF2412A00F14235 /* Tool */,
 				185B896C1BC93EA600477778 /* Assets.xcassets */,
 				185B89711BC93EA600477778 /* Info.plist */,
 				185B89691BC93EA600477778 /* Stock.xcdatamodeld */,
@@ -528,6 +545,7 @@
 				18E194F21BD13E0300494248 /* PersonalViewController.m in Sources */,
 				185B899C1BCA41F900477778 /* WelcomeView.m in Sources */,
 				1880864A1BDFC19400DF4FD3 /* StockServerManager.m in Sources */,
+				18364F9D1BF2416F00F14235 /* CrashReporter.m in Sources */,
 				1811E3251BEDDBF60027A19A /* StockNetworkCommonData.m in Sources */,
 				185B89621BC93EA600477778 /* AppDelegate.m in Sources */,
 				1811E3391BEE3B280027A19A /* Stock+CoreDataProperties.m in Sources */,
@@ -667,6 +685,10 @@
 			baseConfigurationReference = FC6AE75A53C09B5A19018A4B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Stock/PrefixHeader.pch";
 				INFOPLIST_FILE = Stock/Info.plist;
@@ -681,6 +703,10 @@
 			baseConfigurationReference = 86BDFBFD7247A93391043AA5 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Stock/PrefixHeader.pch";
 				INFOPLIST_FILE = Stock/Info.plist;
