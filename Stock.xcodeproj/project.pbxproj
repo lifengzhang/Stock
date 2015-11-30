@@ -7,35 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1811E3221BEDDAA40027A19A /* StockHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811E3211BEDDAA40027A19A /* StockHTTPSessionManager.m */; settings = {ASSET_TAGS = (); }; };
-		1811E3251BEDDBF60027A19A /* StockNetworkCommonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811E3241BEDDBF60027A19A /* StockNetworkCommonData.m */; settings = {ASSET_TAGS = (); }; };
-		1811E3281BEDDE030027A19A /* StockServerAFHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811E3271BEDDE030027A19A /* StockServerAFHttpClient.m */; settings = {ASSET_TAGS = (); }; };
-		1811E3391BEE3B280027A19A /* Stock+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811E3361BEE3B280027A19A /* Stock+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
-		1811E33A1BEE3B280027A19A /* Stock.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811E3381BEE3B280027A19A /* Stock.m */; settings = {ASSET_TAGS = (); }; };
-		182A17721BD7CDCA006FE38D /* StockListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A17711BD7CDCA006FE38D /* StockListView.m */; settings = {ASSET_TAGS = (); }; };
-		182A17751BD7D23D006FE38D /* StockListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A17741BD7D23D006FE38D /* StockListTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		182A17781BD7D90B006FE38D /* WelcomeTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A17771BD7D90B006FE38D /* WelcomeTestView.m */; settings = {ASSET_TAGS = (); }; };
-		18364F981BEF6AB900F14235 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 18364F951BEF6AB900F14235 /* User+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
-		18364F991BEF6AB900F14235 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 18364F971BEF6AB900F14235 /* User.m */; settings = {ASSET_TAGS = (); }; };
-		18364F9D1BF2416F00F14235 /* CrashReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18364F9C1BF2416F00F14235 /* CrashReporter.m */; settings = {ASSET_TAGS = (); }; };
-		18364F9F1BF2466100F14235 /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18364F9E1BF2466100F14235 /* CrashReporter.framework */; settings = {ASSET_TAGS = (); }; };
+		1811E3221BEDDAA40027A19A /* StockHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811E3211BEDDAA40027A19A /* StockHTTPSessionManager.m */; };
+		1811E3251BEDDBF60027A19A /* StockNetworkCommonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811E3241BEDDBF60027A19A /* StockNetworkCommonData.m */; };
+		1811E3281BEDDE030027A19A /* StockServerAFHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811E3271BEDDE030027A19A /* StockServerAFHttpClient.m */; };
+		1811E3391BEE3B280027A19A /* Stock+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811E3361BEE3B280027A19A /* Stock+CoreDataProperties.m */; };
+		1811E33A1BEE3B280027A19A /* Stock.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811E3381BEE3B280027A19A /* Stock.m */; };
+		182A17721BD7CDCA006FE38D /* StockListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A17711BD7CDCA006FE38D /* StockListView.m */; };
+		182A17751BD7D23D006FE38D /* StockListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A17741BD7D23D006FE38D /* StockListTableViewCell.m */; };
+		182A17781BD7D90B006FE38D /* WelcomeTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A17771BD7D90B006FE38D /* WelcomeTestView.m */; };
+		18364F981BEF6AB900F14235 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 18364F951BEF6AB900F14235 /* User+CoreDataProperties.m */; };
+		18364F991BEF6AB900F14235 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 18364F971BEF6AB900F14235 /* User.m */; };
+		18364F9D1BF2416F00F14235 /* CrashReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18364F9C1BF2416F00F14235 /* CrashReporter.m */; };
+		18364F9F1BF2466100F14235 /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18364F9E1BF2466100F14235 /* CrashReporter.framework */; };
 		185B895F1BC93EA600477778 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B895E1BC93EA600477778 /* main.m */; };
 		185B89621BC93EA600477778 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B89611BC93EA600477778 /* AppDelegate.m */; };
 		185B896B1BC93EA600477778 /* Stock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 185B89691BC93EA600477778 /* Stock.xcdatamodeld */; };
 		185B896D1BC93EA600477778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185B896C1BC93EA600477778 /* Assets.xcassets */; };
 		185B897B1BC93EA600477778 /* StockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B897A1BC93EA600477778 /* StockTests.m */; };
 		185B89861BC93EA600477778 /* StockUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B89851BC93EA600477778 /* StockUITests.m */; };
-		185B89951BCA3F8000477778 /* Welcome.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185B89941BCA3F8000477778 /* Welcome.xcassets */; settings = {ASSET_TAGS = (); }; };
-		185B89991BCA41A800477778 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B89981BCA41A800477778 /* WelcomeViewController.m */; settings = {ASSET_TAGS = (); }; };
-		185B899C1BCA41F900477778 /* WelcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B899B1BCA41F900477778 /* WelcomeView.m */; settings = {ASSET_TAGS = (); }; };
-		1880864A1BDFC19400DF4FD3 /* StockServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 188086491BDFC19400DF4FD3 /* StockServerManager.m */; settings = {ASSET_TAGS = (); }; };
-		18DF49861BCD3969006AF4FC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DF49851BCD3969006AF4FC /* RootViewController.m */; settings = {ASSET_TAGS = (); }; };
-		18DF498E1BCD4995006AF4FC /* NSString+StringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DF498D1BCD4995006AF4FC /* NSString+StringAdditions.m */; settings = {ASSET_TAGS = (); }; };
-		18E194EC1BD133FB00494248 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E194EB1BD133FB00494248 /* HomeViewController.m */; settings = {ASSET_TAGS = (); }; };
-		18E194EE1BD13A4200494248 /* Home.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E194ED1BD13A4200494248 /* Home.xcassets */; settings = {ASSET_TAGS = (); }; };
-		18E194F21BD13E0300494248 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E194F11BD13E0300494248 /* PersonalViewController.m */; settings = {ASSET_TAGS = (); }; };
-		18E194F41BD1D9E500494248 /* Personal.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E194F31BD1D9E500494248 /* Personal.xcassets */; settings = {ASSET_TAGS = (); }; };
-		18E5CCD91BD3DC2000256C79 /* HttpURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5CCD81BD3DC2000256C79 /* HttpURLSession.m */; settings = {ASSET_TAGS = (); }; };
+		185B89951BCA3F8000477778 /* Welcome.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185B89941BCA3F8000477778 /* Welcome.xcassets */; };
+		185B89991BCA41A800477778 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B89981BCA41A800477778 /* WelcomeViewController.m */; };
+		185B899C1BCA41F900477778 /* WelcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B899B1BCA41F900477778 /* WelcomeView.m */; };
+		1880864A1BDFC19400DF4FD3 /* StockServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 188086491BDFC19400DF4FD3 /* StockServerManager.m */; };
+		18DF49861BCD3969006AF4FC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DF49851BCD3969006AF4FC /* RootViewController.m */; };
+		18DF498E1BCD4995006AF4FC /* NSString+StringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DF498D1BCD4995006AF4FC /* NSString+StringAdditions.m */; };
+		18E194EC1BD133FB00494248 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E194EB1BD133FB00494248 /* HomeViewController.m */; };
+		18E194EE1BD13A4200494248 /* Home.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E194ED1BD13A4200494248 /* Home.xcassets */; };
+		18E194F21BD13E0300494248 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E194F11BD13E0300494248 /* PersonalViewController.m */; };
+		18E194F41BD1D9E500494248 /* Personal.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E194F31BD1D9E500494248 /* Personal.xcassets */; };
+		18E5CCD91BD3DC2000256C79 /* HttpURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5CCD81BD3DC2000256C79 /* HttpURLSession.m */; };
 		A87BFE457C6AE026B1C4B5B8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D1E0D71F29177210AF9017 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +81,7 @@
 		18364F9B1BF2416F00F14235 /* CrashReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashReporter.h; sourceTree = "<group>"; };
 		18364F9C1BF2416F00F14235 /* CrashReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashReporter.m; sourceTree = "<group>"; };
 		18364F9E1BF2466100F14235 /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CrashReporter.framework; sourceTree = "<group>"; };
+		184557511C0C80C700CAA31A /* DeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
 		185B895A1BC93EA600477778 /* Stock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185B895E1BC93EA600477778 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		185B89601BC93EA600477778 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -176,6 +177,7 @@
 			children = (
 				18364F9B1BF2416F00F14235 /* CrashReporter.h */,
 				18364F9C1BF2416F00F14235 /* CrashReporter.m */,
+				184557511C0C80C700CAA31A /* DeviceInfo.h */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
