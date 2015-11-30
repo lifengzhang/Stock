@@ -19,6 +19,8 @@
 		18364F991BEF6AB900F14235 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 18364F971BEF6AB900F14235 /* User.m */; };
 		18364F9D1BF2416F00F14235 /* CrashReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18364F9C1BF2416F00F14235 /* CrashReporter.m */; };
 		18364F9F1BF2466100F14235 /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18364F9E1BF2466100F14235 /* CrashReporter.framework */; };
+		184557551C0C868400CAA31A /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184557541C0C868400CAA31A /* LogInViewController.m */; };
+		184557591C0C876D00CAA31A /* LogInView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184557581C0C876D00CAA31A /* LogInView.m */; };
 		185B895F1BC93EA600477778 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B895E1BC93EA600477778 /* main.m */; };
 		185B89621BC93EA600477778 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B89611BC93EA600477778 /* AppDelegate.m */; };
 		185B896B1BC93EA600477778 /* Stock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 185B89691BC93EA600477778 /* Stock.xcdatamodeld */; };
@@ -82,6 +84,10 @@
 		18364F9C1BF2416F00F14235 /* CrashReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashReporter.m; sourceTree = "<group>"; };
 		18364F9E1BF2466100F14235 /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CrashReporter.framework; sourceTree = "<group>"; };
 		184557511C0C80C700CAA31A /* DeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
+		184557531C0C868400CAA31A /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		184557541C0C868400CAA31A /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
+		184557571C0C876D00CAA31A /* LogInView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInView.h; sourceTree = "<group>"; };
+		184557581C0C876D00CAA31A /* LogInView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInView.m; sourceTree = "<group>"; };
 		185B895A1BC93EA600477778 /* Stock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185B895E1BC93EA600477778 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		185B89601BC93EA600477778 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -182,6 +188,26 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		184557521C0C84D000CAA31A /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				184557531C0C868400CAA31A /* LogInViewController.h */,
+				184557541C0C868400CAA31A /* LogInViewController.m */,
+				184557561C0C86B200CAA31A /* View */,
+			);
+			name = LogIn;
+			path = Welcome/LogIn;
+			sourceTree = "<group>";
+		};
+		184557561C0C86B200CAA31A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				184557571C0C876D00CAA31A /* LogInView.h */,
+				184557581C0C876D00CAA31A /* LogInView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		185B89511BC93EA600477778 = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +240,7 @@
 				18DF49841BCD3969006AF4FC /* RootViewController.h */,
 				18DF49851BCD3969006AF4FC /* RootViewController.m */,
 				185B89961BCA417F00477778 /* Welcome */,
+				184557521C0C84D000CAA31A /* LogIn */,
 				18E194E91BD133E600494248 /* Home */,
 				18E194EF1BD13DEC00494248 /* Personal */,
 				1811E32B1BEDEB810027A19A /* Model */,
@@ -553,6 +580,7 @@
 				1811E3391BEE3B280027A19A /* Stock+CoreDataProperties.m in Sources */,
 				1811E3281BEDDE030027A19A /* StockServerAFHttpClient.m in Sources */,
 				18364F991BEF6AB900F14235 /* User.m in Sources */,
+				184557591C0C876D00CAA31A /* LogInView.m in Sources */,
 				1811E3221BEDDAA40027A19A /* StockHTTPSessionManager.m in Sources */,
 				18DF49861BCD3969006AF4FC /* RootViewController.m in Sources */,
 				18364F981BEF6AB900F14235 /* User+CoreDataProperties.m in Sources */,
@@ -561,6 +589,7 @@
 				182A17781BD7D90B006FE38D /* WelcomeTestView.m in Sources */,
 				185B896B1BC93EA600477778 /* Stock.xcdatamodeld in Sources */,
 				18DF498E1BCD4995006AF4FC /* NSString+StringAdditions.m in Sources */,
+				184557551C0C868400CAA31A /* LogInViewController.m in Sources */,
 				1811E33A1BEE3B280027A19A /* Stock.m in Sources */,
 				185B895F1BC93EA600477778 /* main.m in Sources */,
 				182A17751BD7D23D006FE38D /* StockListTableViewCell.m in Sources */,
