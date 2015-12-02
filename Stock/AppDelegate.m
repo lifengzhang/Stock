@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "WelcomeViewController.h"
 #import "RootViewController.h"
+#import "LogInViewController.h"
 
 @interface AppDelegate ()
 @property(nonatomic,strong) RootViewController *rootViewController;
@@ -60,7 +61,10 @@
 }
 
 - (void)setRootViewControllerForWindowRootViewController {
-    self.window.rootViewController = [self.rootViewController getTabBarController];
+    
+    self.window.rootViewController = [[LogInViewController alloc] init];
+    
+    //self.window.rootViewController = [self.rootViewController getTabBarController];
 }
 
 #pragma mark - register notification

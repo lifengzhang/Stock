@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class DeformationButton;
+
 @interface LogInView : UIView
 
 @property (nonnull, nonatomic, strong) UITextField *phoneNumberTF;
@@ -16,6 +18,6 @@
 
 @property (nonnull, nonatomic, strong) UIButton *getTextNumberButton;
 
-@property (nonnull, nonatomic, strong) UIButton *nextButton;
+@property (nonnull, nonatomic, strong) DeformationButton *nextButton;
 
 @end

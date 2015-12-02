@@ -7,6 +7,7 @@
 //
 
 #import "LogInView.h"
+#import "DeformationButton.h"
 
 #define PhoneNumberTFPlaceHolderColor                                           \
 [UIColor colorWithRed:180 / 255.0 green:180 / 255.0 blue:180 / 255.0 alpha:1.0]
@@ -88,8 +89,8 @@
 }
 
 - (void)createNextButton {
-    self.nextButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.nextButton.backgroundColor = NextButtonColor;
+    self.nextButton = [[DeformationButton alloc] initWithFrame:CGRectZero withColor:NextButtonColor];
+    //self.nextButton.backgroundColor = NextButtonColor;
     [self.nextButton setTitle:@"Log In" forState:UIControlStateNormal];
     self.nextButton.titleLabel.font = NextButtonFont;
     //[self disableSignUpOrLogInButton];
@@ -98,7 +99,12 @@
 }
 
 - (void)setUpConstrain {
-    
+    [self.nextButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.mas_equalTo(100);
+        make.height.mas_equalTo(50);
+        make.centerX.equalTo(self);
+        make.centerY.equalTo(self);
+    }];
 }
 
 @end

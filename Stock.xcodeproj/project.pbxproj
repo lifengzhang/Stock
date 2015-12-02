@@ -39,6 +39,8 @@
 		18E194F41BD1D9E500494248 /* Personal.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E194F31BD1D9E500494248 /* Personal.xcassets */; };
 		18E5CCD91BD3DC2000256C79 /* HttpURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5CCD81BD3DC2000256C79 /* HttpURLSession.m */; };
 		A87BFE457C6AE026B1C4B5B8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D1E0D71F29177210AF9017 /* libPods.a */; };
+		DD35E4CE1C0E9477006E1771 /* DeformationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DD35E4CB1C0E9477006E1771 /* DeformationButton.m */; };
+		DD35E4CF1C0E9477006E1771 /* SpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD35E4CD1C0E9477006E1771 /* SpinnerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +126,10 @@
 		18E5CCD81BD3DC2000256C79 /* HttpURLSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpURLSession.m; sourceTree = "<group>"; };
 		86BDFBFD7247A93391043AA5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C6D1E0D71F29177210AF9017 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD35E4CA1C0E9477006E1771 /* DeformationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeformationButton.h; sourceTree = "<group>"; };
+		DD35E4CB1C0E9477006E1771 /* DeformationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeformationButton.m; sourceTree = "<group>"; };
+		DD35E4CC1C0E9477006E1771 /* SpinnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinnerView.h; sourceTree = "<group>"; };
+		DD35E4CD1C0E9477006E1771 /* SpinnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinnerView.m; sourceTree = "<group>"; };
 		FC6AE75A53C09B5A19018A4B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -247,6 +253,7 @@
 				1880863F1BDFB6FC00DF4FD3 /* Server */,
 				18E5CCD21BD3C02B00256C79 /* Network */,
 				18DF498B1BCD4899006AF4FC /* Category */,
+				DD35E4C81C0E9477006E1771 /* CustomerUI */,
 				18364F9A1BF2412A00F14235 /* Tool */,
 				185B896C1BC93EA600477778 /* Assets.xcassets */,
 				185B89711BC93EA600477778 /* Info.plist */,
@@ -402,6 +409,25 @@
 				86BDFBFD7247A93391043AA5 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DD35E4C81C0E9477006E1771 /* CustomerUI */ = {
+			isa = PBXGroup;
+			children = (
+				DD35E4C91C0E9477006E1771 /* DeformationButton */,
+			);
+			path = CustomerUI;
+			sourceTree = "<group>";
+		};
+		DD35E4C91C0E9477006E1771 /* DeformationButton */ = {
+			isa = PBXGroup;
+			children = (
+				DD35E4CA1C0E9477006E1771 /* DeformationButton.h */,
+				DD35E4CB1C0E9477006E1771 /* DeformationButton.m */,
+				DD35E4CC1C0E9477006E1771 /* SpinnerView.h */,
+				DD35E4CD1C0E9477006E1771 /* SpinnerView.m */,
+			);
+			path = DeformationButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -582,6 +608,7 @@
 				18364F991BEF6AB900F14235 /* User.m in Sources */,
 				184557591C0C876D00CAA31A /* LogInView.m in Sources */,
 				1811E3221BEDDAA40027A19A /* StockHTTPSessionManager.m in Sources */,
+				DD35E4CF1C0E9477006E1771 /* SpinnerView.m in Sources */,
 				18DF49861BCD3969006AF4FC /* RootViewController.m in Sources */,
 				18364F981BEF6AB900F14235 /* User+CoreDataProperties.m in Sources */,
 				185B89991BCA41A800477778 /* WelcomeViewController.m in Sources */,
@@ -589,6 +616,7 @@
 				182A17781BD7D90B006FE38D /* WelcomeTestView.m in Sources */,
 				185B896B1BC93EA600477778 /* Stock.xcdatamodeld in Sources */,
 				18DF498E1BCD4995006AF4FC /* NSString+StringAdditions.m in Sources */,
+				DD35E4CE1C0E9477006E1771 /* DeformationButton.m in Sources */,
 				184557551C0C868400CAA31A /* LogInViewController.m in Sources */,
 				1811E33A1BEE3B280027A19A /* Stock.m in Sources */,
 				185B895F1BC93EA600477778 /* main.m in Sources */,
