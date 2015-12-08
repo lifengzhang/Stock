@@ -7,11 +7,13 @@
 //
 
 #import "LogInViewController.h"
-#import "LogInView.h"
+#import "SignUpView.h"
+#import "DeformationButton.h"
+#import "SetUpPassWordViewController.h"
 
 @interface LogInViewController ()
 
-@property (nonatomic, strong) LogInView *logInView;
+@property (nonatomic, strong) SignUpView *logInView;
 
 @end
 
@@ -29,8 +31,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self showNavigationController];
+    
+}
+
+- (void)showNavigationController {
+    
+    self.navigationController.navigationBarHidden = NO;
+        
+}
+
 - (void)initSubViews {
-    self.logInView = [[LogInView alloc] initWithFrame:CGRectZero];
+    self.logInView = [[SignUpView alloc] initWithFrame:CGRectZero];
+    
+    [self.logInView.nextButton addTarget:self action:@selector(signUp) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:self.logInView];
     
@@ -38,6 +55,17 @@
     [self.logInView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
+}
+
+- (void)signUp {
+    
+    dispatch_time_t when=dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.f * NSEC_PER_SEC));
+    dispatch_after(when, dispatch_get_main_queue(), ^{
+        SetUpPassWordViewController *setUpPassWordViewController = [[SetUpPassWordViewController alloc] init];
+        
+        [self.navigationController pushViewController:setUpPassWordViewController animated:YES];
+    });
+
 }
 
 @end

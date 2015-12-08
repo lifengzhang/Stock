@@ -20,7 +20,7 @@
 		18364F9D1BF2416F00F14235 /* CrashReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18364F9C1BF2416F00F14235 /* CrashReporter.m */; };
 		18364F9F1BF2466100F14235 /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18364F9E1BF2466100F14235 /* CrashReporter.framework */; };
 		184557551C0C868400CAA31A /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184557541C0C868400CAA31A /* LogInViewController.m */; };
-		184557591C0C876D00CAA31A /* LogInView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184557581C0C876D00CAA31A /* LogInView.m */; };
+		184557591C0C876D00CAA31A /* SignUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184557581C0C876D00CAA31A /* SignUpView.m */; };
 		185B895F1BC93EA600477778 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B895E1BC93EA600477778 /* main.m */; };
 		185B89621BC93EA600477778 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B89611BC93EA600477778 /* AppDelegate.m */; };
 		185B896B1BC93EA600477778 /* Stock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 185B89691BC93EA600477778 /* Stock.xcdatamodeld */; };
@@ -39,8 +39,14 @@
 		18E194F41BD1D9E500494248 /* Personal.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E194F31BD1D9E500494248 /* Personal.xcassets */; };
 		18E5CCD91BD3DC2000256C79 /* HttpURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5CCD81BD3DC2000256C79 /* HttpURLSession.m */; };
 		A87BFE457C6AE026B1C4B5B8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D1E0D71F29177210AF9017 /* libPods.a */; };
+		DD0DCE0C1C152CE400871796 /* SetUpPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0DCE0B1C152CE400871796 /* SetUpPassWordViewController.m */; };
+		DD0DCE0F1C152D0100871796 /* SetUpPassWordView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0DCE0E1C152D0100871796 /* SetUpPassWordView.m */; };
 		DD35E4CE1C0E9477006E1771 /* DeformationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DD35E4CB1C0E9477006E1771 /* DeformationButton.m */; };
 		DD35E4CF1C0E9477006E1771 /* SpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD35E4CD1C0E9477006E1771 /* SpinnerView.m */; };
+		DD35E4D21C0ECA4C006E1771 /* QMFWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD35E4D11C0ECA4C006E1771 /* QMFWelcomeViewController.m */; };
+		DD35E4D81C0ED3D6006E1771 /* QMFWelcomeFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD35E4D71C0ED3D6006E1771 /* QMFWelcomeFirstView.m */; };
+		DD9883311C1512E00038011D /* QMFWelcomeThirdView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9883301C1512E00038011D /* QMFWelcomeThirdView.m */; };
+		DD9883331C1521550038011D /* SignUpOrLogIn.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9883321C1521550038011D /* SignUpOrLogIn.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,8 +94,8 @@
 		184557511C0C80C700CAA31A /* DeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
 		184557531C0C868400CAA31A /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
 		184557541C0C868400CAA31A /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
-		184557571C0C876D00CAA31A /* LogInView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInView.h; sourceTree = "<group>"; };
-		184557581C0C876D00CAA31A /* LogInView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInView.m; sourceTree = "<group>"; };
+		184557571C0C876D00CAA31A /* SignUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpView.h; sourceTree = "<group>"; };
+		184557581C0C876D00CAA31A /* SignUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpView.m; sourceTree = "<group>"; };
 		185B895A1BC93EA600477778 /* Stock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185B895E1BC93EA600477778 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		185B89601BC93EA600477778 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -126,10 +132,21 @@
 		18E5CCD81BD3DC2000256C79 /* HttpURLSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpURLSession.m; sourceTree = "<group>"; };
 		86BDFBFD7247A93391043AA5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C6D1E0D71F29177210AF9017 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD0DCE0A1C152CE400871796 /* SetUpPassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetUpPassWordViewController.h; sourceTree = "<group>"; };
+		DD0DCE0B1C152CE400871796 /* SetUpPassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetUpPassWordViewController.m; sourceTree = "<group>"; };
+		DD0DCE0D1C152D0100871796 /* SetUpPassWordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetUpPassWordView.h; sourceTree = "<group>"; };
+		DD0DCE0E1C152D0100871796 /* SetUpPassWordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetUpPassWordView.m; sourceTree = "<group>"; };
 		DD35E4CA1C0E9477006E1771 /* DeformationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeformationButton.h; sourceTree = "<group>"; };
 		DD35E4CB1C0E9477006E1771 /* DeformationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeformationButton.m; sourceTree = "<group>"; };
 		DD35E4CC1C0E9477006E1771 /* SpinnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinnerView.h; sourceTree = "<group>"; };
 		DD35E4CD1C0E9477006E1771 /* SpinnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinnerView.m; sourceTree = "<group>"; };
+		DD35E4D01C0ECA4C006E1771 /* QMFWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMFWelcomeViewController.h; sourceTree = "<group>"; };
+		DD35E4D11C0ECA4C006E1771 /* QMFWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMFWelcomeViewController.m; sourceTree = "<group>"; };
+		DD35E4D61C0ED3D6006E1771 /* QMFWelcomeFirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMFWelcomeFirstView.h; sourceTree = "<group>"; };
+		DD35E4D71C0ED3D6006E1771 /* QMFWelcomeFirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMFWelcomeFirstView.m; sourceTree = "<group>"; };
+		DD98832F1C1512E00038011D /* QMFWelcomeThirdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMFWelcomeThirdView.h; sourceTree = "<group>"; };
+		DD9883301C1512E00038011D /* QMFWelcomeThirdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMFWelcomeThirdView.m; sourceTree = "<group>"; };
+		DD9883321C1521550038011D /* SignUpOrLogIn.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SignUpOrLogIn.xcassets; sourceTree = "<group>"; };
 		FC6AE75A53C09B5A19018A4B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,6 +216,8 @@
 			children = (
 				184557531C0C868400CAA31A /* LogInViewController.h */,
 				184557541C0C868400CAA31A /* LogInViewController.m */,
+				DD0DCE0A1C152CE400871796 /* SetUpPassWordViewController.h */,
+				DD0DCE0B1C152CE400871796 /* SetUpPassWordViewController.m */,
 				184557561C0C86B200CAA31A /* View */,
 			);
 			name = LogIn;
@@ -208,8 +227,10 @@
 		184557561C0C86B200CAA31A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				184557571C0C876D00CAA31A /* LogInView.h */,
-				184557581C0C876D00CAA31A /* LogInView.m */,
+				184557571C0C876D00CAA31A /* SignUpView.h */,
+				184557581C0C876D00CAA31A /* SignUpView.m */,
+				DD0DCE0D1C152D0100871796 /* SetUpPassWordView.h */,
+				DD0DCE0E1C152D0100871796 /* SetUpPassWordView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -294,6 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				185B89941BCA3F8000477778 /* Welcome.xcassets */,
+				DD9883321C1521550038011D /* SignUpOrLogIn.xcassets */,
 				18E194ED1BD13A4200494248 /* Home.xcassets */,
 				18E194F31BD1D9E500494248 /* Personal.xcassets */,
 			);
@@ -309,6 +331,12 @@
 				185B899B1BCA41F900477778 /* WelcomeView.m */,
 				182A17761BD7D90B006FE38D /* WelcomeTestView.h */,
 				182A17771BD7D90B006FE38D /* WelcomeTestView.m */,
+				DD35E4D01C0ECA4C006E1771 /* QMFWelcomeViewController.h */,
+				DD35E4D11C0ECA4C006E1771 /* QMFWelcomeViewController.m */,
+				DD35E4D61C0ED3D6006E1771 /* QMFWelcomeFirstView.h */,
+				DD35E4D71C0ED3D6006E1771 /* QMFWelcomeFirstView.m */,
+				DD98832F1C1512E00038011D /* QMFWelcomeThirdView.h */,
+				DD9883301C1512E00038011D /* QMFWelcomeThirdView.m */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -538,6 +566,7 @@
 				185B89951BCA3F8000477778 /* Welcome.xcassets in Resources */,
 				18E194F41BD1D9E500494248 /* Personal.xcassets in Resources */,
 				185B896D1BC93EA600477778 /* Assets.xcassets in Resources */,
+				DD9883331C1521550038011D /* SignUpOrLogIn.xcassets in Resources */,
 				18E194EE1BD13A4200494248 /* Home.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,6 +625,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD35E4D81C0ED3D6006E1771 /* QMFWelcomeFirstView.m in Sources */,
+				DD0DCE0C1C152CE400871796 /* SetUpPassWordViewController.m in Sources */,
 				18E5CCD91BD3DC2000256C79 /* HttpURLSession.m in Sources */,
 				18E194F21BD13E0300494248 /* PersonalViewController.m in Sources */,
 				185B899C1BCA41F900477778 /* WelcomeView.m in Sources */,
@@ -606,7 +637,8 @@
 				1811E3391BEE3B280027A19A /* Stock+CoreDataProperties.m in Sources */,
 				1811E3281BEDDE030027A19A /* StockServerAFHttpClient.m in Sources */,
 				18364F991BEF6AB900F14235 /* User.m in Sources */,
-				184557591C0C876D00CAA31A /* LogInView.m in Sources */,
+				184557591C0C876D00CAA31A /* SignUpView.m in Sources */,
+				DD0DCE0F1C152D0100871796 /* SetUpPassWordView.m in Sources */,
 				1811E3221BEDDAA40027A19A /* StockHTTPSessionManager.m in Sources */,
 				DD35E4CF1C0E9477006E1771 /* SpinnerView.m in Sources */,
 				18DF49861BCD3969006AF4FC /* RootViewController.m in Sources */,
@@ -619,8 +651,10 @@
 				DD35E4CE1C0E9477006E1771 /* DeformationButton.m in Sources */,
 				184557551C0C868400CAA31A /* LogInViewController.m in Sources */,
 				1811E33A1BEE3B280027A19A /* Stock.m in Sources */,
+				DD35E4D21C0ECA4C006E1771 /* QMFWelcomeViewController.m in Sources */,
 				185B895F1BC93EA600477778 /* main.m in Sources */,
 				182A17751BD7D23D006FE38D /* StockListTableViewCell.m in Sources */,
+				DD9883311C1512E00038011D /* QMFWelcomeThirdView.m in Sources */,
 				18E194EC1BD133FB00494248 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

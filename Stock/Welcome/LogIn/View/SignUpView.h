@@ -10,7 +10,9 @@
 
 @class DeformationButton;
 
-@interface LogInView : UIView
+@interface SignUpView : UIView
+
+@property (nonnull, nonatomic, strong) UIImageView *signUpLogoIV;
 
 @property (nonnull, nonatomic, strong) UITextField *phoneNumberTF;
 

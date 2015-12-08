@@ -10,6 +10,7 @@
 #import "WelcomeViewController.h"
 #import "RootViewController.h"
 #import "LogInViewController.h"
+#import "QMFWelcomeViewController.h"
 
 @interface AppDelegate ()
 @property(nonatomic,strong) RootViewController *rootViewController;
@@ -22,7 +23,13 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[WelcomeViewController alloc] init];
+    
+    
+    QMFWelcomeViewController *qmfWelcomeViewController = [[QMFWelcomeViewController alloc] init];
+    
+    UINavigationController *welcomeNavigationController = [[UINavigationController alloc] initWithRootViewController:qmfWelcomeViewController];
+    
+    self.window.rootViewController = welcomeNavigationController;
     [self.window makeKeyAndVisible];
     
     [self createRootViewController];
