@@ -8,6 +8,7 @@
 
 #import "SignUpView.h"
 #import "DeformationButton.h"
+#import "TimerButton.h"
 
 #define QMFWelcomeViewBGColor                                                       \
 [UIColor colorWithRed: 255 / 255.0 green:240 / 255.0 blue: 127 / 255.0 alpha:1.0]
@@ -18,9 +19,14 @@
 [UIColor colorWithRed:59 / 255.0 green:59 / 255.0 blue:59 / 255.0 alpha:1.0]
 #define NextButtonColor                                                             \
 [UIColor colorWithRed:180 / 255.0 green:180 / 255.0 blue:180 / 255.0 alpha:1.0]
+#define UnActivityGetTextNumberButtonColor                                          \
+[UIColor colorWithRed:220 / 255.0 green:220 / 255.0 blue:220 / 255.0 alpha:1.0]
+#define UnActivityGetTextNumberButtonFontColor                                      \
+[UIColor colorWithRed:150 / 255.0 green:150 / 255.0 blue:150 / 255.0 alpha:1.0]
 
 #define PhoneNumberTFFont                                   [UIFont systemFontOfSize:16]
 #define NextButtonFont                                      [UIFont systemFontOfSize:15]
+#define GetTextNumberButtonFont                             [UIFont systemFontOfSize:11]
 
 @interface SignUpView ()
 
@@ -130,13 +136,34 @@
 }
 
 - (void)createGetTextNumberButton {
-    self.getTextNumberButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    //self.nextButton.backgroundColor = NextButtonColor;
-    [self.nextButton setTitle:@"获取验证码" forState:UIControlStateNormal];
-    self.nextButton.titleLabel.font = NextButtonFont;
+    
+    __block NSUInteger count = 10;
+    
+    __weak SignUpView *weakSelf = self;
+    
+    self.getTextNumberButton = [TimerButton countTimeWithTotalTime:60 TimeInterval:0 block:^{
+        
+        __strong SignUpView *strongSelf = weakSelf;
+        
+        count --;
+        
+        if (count < 1) {
+            count = 10;
+            [strongSelf.getTextNumberButton stop];
+            
+            [strongSelf.getTextNumberButton setTitle:@"重新发生" forState:UIControlStateNormal];
+        }else {
+           [strongSelf.getTextNumberButton setTitle:[NSString stringWithFormat:@"%lu",(unsigned long)count] forState:UIControlStateNormal];
+        }
+
+    }];
+    self.getTextNumberButton.backgroundColor = UnActivityGetTextNumberButtonColor;
+    [self.getTextNumberButton setTitle:@"获取验证码" forState:UIControlStateNormal];
+    self.getTextNumberButton.titleLabel.font = GetTextNumberButtonFont;
+    [self.getTextNumberButton setTitleColor:UnActivityGetTextNumberButtonFontColor forState:UIControlStateNormal];
     //[self disableSignUpOrLogInButton];
-    [self.nextButton.layer setCornerRadius:5.0];
-    [self addSubview:self.nextButton];
+    [self.getTextNumberButton.layer setCornerRadius:15.0];
+    [self.tfContentView addSubview:self.getTextNumberButton];
 }
 
 - (void)createNextButton {
@@ -180,8 +207,15 @@
     [self.testNumberTF mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.lineIV.mas_bottom);
         make.left.equalTo(self.phoneNumberTF);
-        make.right.equalTo(self.tfContentView).with.offset(-40);
+        make.right.equalTo(self.getTextNumberButton.mas_left);
         make.height.equalTo(self.phoneNumberTF);
+    }];
+    
+    [self.getTextNumberButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(self.testNumberTF);
+        make.width.mas_equalTo(95);
+        make.height.mas_equalTo(30);
+        make.right.equalTo(self.tfContentView).with.offset(-10.f);
     }];
     
     [self.nextButton mas_makeConstraints:^(MASConstraintMaker *make) {

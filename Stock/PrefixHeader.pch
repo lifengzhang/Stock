@@ -22,4 +22,6 @@
 #import "StockServerManager.h"
 #import "HttpURLSession.h"
 
+#import "UIImage+Additions.h"
+
 #endif /* PrefixHeader_pch */

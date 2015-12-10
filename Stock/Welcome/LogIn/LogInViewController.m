@@ -41,7 +41,12 @@
 - (void)showNavigationController {
     
     self.navigationController.navigationBarHidden = NO;
-        
+
+    UIImage *backgroundImage = [UIImage createImageViewWithColor:[UIColor clearColor]];
+    
+    [self.navigationController.navigationBar setBackgroundImage:backgroundImage forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
+    
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
 }
 
 - (void)initSubViews {

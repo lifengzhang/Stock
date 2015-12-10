@@ -10,6 +10,8 @@
 
 @class DeformationButton;
 
+@class TimerButton;
+
 @interface SignUpView : UIView
 
 @property (nonnull, nonatomic, strong) UIImageView *signUpLogoIV;
@@ -18,7 +20,7 @@
 
 @property (nonnull, nonatomic, strong) UITextField *testNumberTF;
 
-@property (nonnull, nonatomic, strong) UIButton *getTextNumberButton;
+@property (nonnull, nonatomic, strong) TimerButton *getTextNumberButton;
 
 @property (nonnull, nonatomic, strong) DeformationButton *nextButton;
 

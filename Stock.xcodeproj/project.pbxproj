@@ -45,6 +45,8 @@
 		DD35E4CF1C0E9477006E1771 /* SpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD35E4CD1C0E9477006E1771 /* SpinnerView.m */; };
 		DD35E4D21C0ECA4C006E1771 /* QMFWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD35E4D11C0ECA4C006E1771 /* QMFWelcomeViewController.m */; };
 		DD35E4D81C0ED3D6006E1771 /* QMFWelcomeFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD35E4D71C0ED3D6006E1771 /* QMFWelcomeFirstView.m */; };
+		DD730A091C16AE7F00DAE58F /* TimerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DD730A081C16AE7F00DAE58F /* TimerButton.m */; };
+		DD730A0F1C17C42300DAE58F /* UIImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = DD730A0E1C17C42300DAE58F /* UIImage+Additions.m */; };
 		DD9883311C1512E00038011D /* QMFWelcomeThirdView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9883301C1512E00038011D /* QMFWelcomeThirdView.m */; };
 		DD9883331C1521550038011D /* SignUpOrLogIn.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9883321C1521550038011D /* SignUpOrLogIn.xcassets */; };
 /* End PBXBuildFile section */
@@ -144,6 +146,10 @@
 		DD35E4D11C0ECA4C006E1771 /* QMFWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMFWelcomeViewController.m; sourceTree = "<group>"; };
 		DD35E4D61C0ED3D6006E1771 /* QMFWelcomeFirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMFWelcomeFirstView.h; sourceTree = "<group>"; };
 		DD35E4D71C0ED3D6006E1771 /* QMFWelcomeFirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMFWelcomeFirstView.m; sourceTree = "<group>"; };
+		DD730A071C16AE7F00DAE58F /* TimerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerButton.h; sourceTree = "<group>"; };
+		DD730A081C16AE7F00DAE58F /* TimerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerButton.m; sourceTree = "<group>"; };
+		DD730A0D1C17C42300DAE58F /* UIImage+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Additions.h"; sourceTree = "<group>"; };
+		DD730A0E1C17C42300DAE58F /* UIImage+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Additions.m"; sourceTree = "<group>"; };
 		DD98832F1C1512E00038011D /* QMFWelcomeThirdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMFWelcomeThirdView.h; sourceTree = "<group>"; };
 		DD9883301C1512E00038011D /* QMFWelcomeThirdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMFWelcomeThirdView.m; sourceTree = "<group>"; };
 		DD9883321C1521550038011D /* SignUpOrLogIn.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SignUpOrLogIn.xcassets; sourceTree = "<group>"; };
@@ -376,6 +382,8 @@
 			children = (
 				18DF498C1BCD4995006AF4FC /* NSString+StringAdditions.h */,
 				18DF498D1BCD4995006AF4FC /* NSString+StringAdditions.m */,
+				DD730A0D1C17C42300DAE58F /* UIImage+Additions.h */,
+				DD730A0E1C17C42300DAE58F /* UIImage+Additions.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -442,6 +450,7 @@
 		DD35E4C81C0E9477006E1771 /* CustomerUI */ = {
 			isa = PBXGroup;
 			children = (
+				DD730A061C16AE5400DAE58F /* TimerButton */,
 				DD35E4C91C0E9477006E1771 /* DeformationButton */,
 			);
 			path = CustomerUI;
@@ -456,6 +465,15 @@
 				DD35E4CD1C0E9477006E1771 /* SpinnerView.m */,
 			);
 			path = DeformationButton;
+			sourceTree = "<group>";
+		};
+		DD730A061C16AE5400DAE58F /* TimerButton */ = {
+			isa = PBXGroup;
+			children = (
+				DD730A071C16AE7F00DAE58F /* TimerButton.h */,
+				DD730A081C16AE7F00DAE58F /* TimerButton.m */,
+			);
+			path = TimerButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -628,8 +646,10 @@
 				DD35E4D81C0ED3D6006E1771 /* QMFWelcomeFirstView.m in Sources */,
 				DD0DCE0C1C152CE400871796 /* SetUpPassWordViewController.m in Sources */,
 				18E5CCD91BD3DC2000256C79 /* HttpURLSession.m in Sources */,
+				DD730A0F1C17C42300DAE58F /* UIImage+Additions.m in Sources */,
 				18E194F21BD13E0300494248 /* PersonalViewController.m in Sources */,
 				185B899C1BCA41F900477778 /* WelcomeView.m in Sources */,
+				DD730A091C16AE7F00DAE58F /* TimerButton.m in Sources */,
 				1880864A1BDFC19400DF4FD3 /* StockServerManager.m in Sources */,
 				18364F9D1BF2416F00F14235 /* CrashReporter.m in Sources */,
 				1811E3251BEDDBF60027A19A /* StockNetworkCommonData.m in Sources */,
